@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipstersamplekeycloakapplication-postgresql:
+    image: postgres:11.4
+    # volumes:
+    #     - ~/volumes/jhipster/jhipsterSampleKeycloakApplication/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhipsterSampleKeycloakApplication
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
